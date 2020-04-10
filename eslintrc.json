@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "./node_modules/eslint-plugin-import/config/errors"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-unused-vars":"off",
+    "semi": "error"
+  }
+}
