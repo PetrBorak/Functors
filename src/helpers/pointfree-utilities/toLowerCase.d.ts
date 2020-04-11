@@ -1,3 +1,3 @@
 // toLowerCase :: String -> String
 
-export type toLowerCase = (x: string) => string
+export declare function toLowerCase(x: string): string

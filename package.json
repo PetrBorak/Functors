@@ -5,10 +5,12 @@
   "main": "lib.bundle.js",
   "types": "index.d.ts",
   "scripts": {
+    "test-watch": "watch-run -i -p './**/*.test.ts,./**/*.js' npm run test",
+    "test": "mocha --require ts-node/register --extensions js,ts,tsx src './**/*.test.{ts,tsx}'",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
     "eslint": "eslint . --ext .js -c eslintrc.json --fix",
     "clean": "rm -rf _bundles lib lib-esm",
-    "build": "npm run clean && webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && webpack"
   },
   "repository": {
     "type": "git",
@@ -27,12 +29,23 @@
   "typings": "./index.d.ts",
   "homepage": "https://github.com/PetrBorak/Functors#readme",
   "dependencies": {
+    "@types/mocha": "^7.0.2",
     "copy-webpack-plugin": "^5.1.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
     "ts-loader": "^6.2.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3",
+    "watch-run": "^1.2.5",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "chai": "^4.2.0",
+    "jest": "^25.3.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
   }
 }

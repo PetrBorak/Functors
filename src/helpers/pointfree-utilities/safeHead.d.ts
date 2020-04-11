@@ -1,3 +1,3 @@
 import { Maybe } from '../../../';
 
-export type safeHeadD = (x: any[]) => Maybe<any>
+export declare function safeHead(x: any[]): Maybe<any>

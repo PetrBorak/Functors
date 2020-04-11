@@ -1,1 +1,1 @@
-export type append = (x: string) => (y: string) => string
+export declare function append(x: string): (y: string) => string

@@ -1,1 +1,1 @@
-export type match = (x: RegExp) => (s: string) => boolean
+export declare function match(x: RegExp): (s: string) => boolean

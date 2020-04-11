@@ -4,3 +4,4 @@ import { curry } from './curry';
 
 //eslint-disable-next-line
 export const always = curry((a, b) => a);
+

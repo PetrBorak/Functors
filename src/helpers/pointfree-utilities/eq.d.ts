@@ -1,1 +1,1 @@
-export type eq = (x: any) => (y: any) => boolean
+export declare function eq(x: any): (y: any) => boolean

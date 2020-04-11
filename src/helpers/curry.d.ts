@@ -1,1 +1,1 @@
-export type curry = (...x: any[]) => (...y: any[]) => any | any
+export declare function curry (...x: any[]): (...y: any[]) => any | any

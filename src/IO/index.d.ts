@@ -1,5 +1,5 @@
-import {Functor} from "src/subtypes";
-import {ApplicativeContainer} from "src/Applicative";
+import {Functor} from "../subtypes";
+import {ApplicativeContainer} from "../Applicative";
 
 export declare class IO<T> {
   public unsafePerformIO: (...any) => T;

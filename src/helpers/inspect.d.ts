@@ -1,1 +1,1 @@
-export type inspect = (x: any) => string
+export declare function inspect(x: any): string

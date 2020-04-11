@@ -1,2 +1,2 @@
 // unsafePerformIO :: IO a -> a
-const unsafePerformIO = io => io.unsafePerformIO();
+export const unsafePerformIO = io => io.unsafePerformIO();

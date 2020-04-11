@@ -1,1 +1,1 @@
-export type always = (x: any) => (y: any) => any
+export declare function always(x: any): (y: any) => any

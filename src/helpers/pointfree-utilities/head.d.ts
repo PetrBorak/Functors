@@ -1,1 +1,1 @@
-export type head = (xs: any[]) => any
+export declare function head(xs: any[]): any
