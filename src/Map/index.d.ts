@@ -1,6 +1,7 @@
 import { Functor, ApplicativeContainer } from "../../";
 
 export declare class Map<T> {
+  constructor(x: T)
   $value: T
   public insert: (k: string, v: any) => T & {k: any}
   public reduceWithKeys: (fn: (acc: any, value: any, key: string) => any, zero: any) => any

@@ -11,7 +11,7 @@ That's mostly because hovewer there exits many functional utility packages
 ## Library formats
 The library is build into UMD / ecma 5 and Ecma 6 + Harmony modules;
 
-###  UMD / ecma 5 
+###  UMD / ecma 5 (AMD + CommonJs)
 
 ```js
 const { Maybe, liftA2, append, concat, reverse } = require('@petrborak/functors');
@@ -28,6 +28,7 @@ liftA2(append)(b)(a);
 
 ```js
 import { Maybe, liftA2, append, concat, reverse } from '@petrborak/functors';
+import { IO  } from '@petrborak/functors/src/IO';
 
 const a = Maybe.of("yltsoM").map(reverse);
 const b = Maybe.of("Adequate").map(concat(" "));
