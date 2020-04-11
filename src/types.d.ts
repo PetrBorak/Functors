@@ -4,7 +4,7 @@ export { Identity } from './Identity/index';
 export { Right } from './Right/index';
 export { Left } from './Left/index';
 export { Either } from './Either/index';
-export { Compose } from './createCompose/index';
+export { createCompose } from './createCompose/index';
 export { Map } from './Map/index';
 export { Maybe } from './Maybe/index';
 export { Task } from './Task/index';
