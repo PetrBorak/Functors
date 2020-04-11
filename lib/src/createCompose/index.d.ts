@@ -3,14 +3,14 @@ import { Functor, ApplicativeContainer } from "../../";
 export type FirstToCompose<A> = (a: any) => A
 export type SecondToCompose<A> = (a: any) => A
 
-export type createCompose<A, B> = (F: FirstToCompose<A>) => (N: SecondToCompose<B>) => Compose<A>
+export declare const createCompose: (...args: any[]) => any;
 
-export declare class Compose<T> {
-  constructor(x: T);
-  private $value: T
+export declare class Compose {
+  constructor(x: any);
+  private $value: any
 
   //TODO - fiugre out the way to pass types from the closure to static property
-  static of(x: any): Compose<any>
-  public map: (fn: (x: any) => any) => Compose<any>
-  public ap: (f: Functor<T>) => ApplicativeContainer<any>
+  static of(x: any): Compose
+  public map: (fn: (x: any) => any) => Compose
+  public ap: (f: Functor<any>) => ApplicativeContainer<any>
 }

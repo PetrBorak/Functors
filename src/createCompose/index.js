@@ -1,4 +1,4 @@
-import { curry } from '../../';
+import { curry } from '../helpers/curry';
 
 export const createCompose = curry((F, G) => class Compose {
   constructor(x) {
