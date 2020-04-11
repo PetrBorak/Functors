@@ -1,1 +1,1 @@
-export type either = (x: any, y: any, z: any)  => any
+export declare function either(x: any, y: any, z: any): any

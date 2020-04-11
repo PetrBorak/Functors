@@ -1,3 +1,3 @@
 import { Left } from '../../';
 
-export type left = (x: any) => Left
+export declare function left(x: any): Left

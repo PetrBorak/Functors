@@ -1,3 +1,3 @@
 import { Task } from '../../../'
 
-export type chain  = (m: Task, fn: (x: any) => any) => Task
+export declare function chain(m: Task, fn: (x: any) => any): Task

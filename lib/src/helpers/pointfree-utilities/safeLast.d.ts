@@ -1,3 +1,4 @@
-import { Maybe } from '../../../';
+import { Maybe } from '../../Maybe/index'
 
-export type safeLast = (x: any[]) => Maybe<any>
+// safeLast :: [a] -> Maybe a
+export declare function safeLast(x: any[]): Maybe<typeof x>

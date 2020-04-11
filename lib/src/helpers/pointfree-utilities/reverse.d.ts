@@ -1,1 +1,1 @@
-export type reverse = (x: string | any[]) => any[]
+export declare function reverse(x: string | any[]): any[]

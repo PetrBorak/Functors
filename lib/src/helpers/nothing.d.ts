@@ -1,3 +1,3 @@
 import { Maybe } from '../../index';
 
-export type nothing = () => Maybe<null>
+export declare function nothing(): Maybe<null>

@@ -1,3 +1,3 @@
 // toUpperCase :: String -> String
 
-export type toUpperCase = (x: string) => String
+export declare function toUpperCase(x: string): String

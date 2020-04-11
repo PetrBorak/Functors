@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/%40petrborak%2Ffunctors.svg)](https://badge.fury.io/js/%40petrborak%2Ffunctors)
+
 # BASIC FUNCTORS AND HELPER UTILITIES
 This package is meant to enable usage of support files from https://www.npmjs.com/package/@mostly-adequate/support
 for usage in typescript based project of my own.

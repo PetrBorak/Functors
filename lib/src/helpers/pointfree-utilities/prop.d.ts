@@ -1,1 +1,1 @@
-export type prop = (x: string) => (y: object) => any
+export declare function prop(x: string): (y: object) => any

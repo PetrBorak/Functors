@@ -1,1 +1,1 @@
-export type identity = (x: any) => typeof x
+export declare function identity(x: any): typeof x

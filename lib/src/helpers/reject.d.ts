@@ -1,3 +1,3 @@
 import { Task } from '../../index';
 
-export type reject = (x: any) => Task
+export declare function reject(x: any): Task

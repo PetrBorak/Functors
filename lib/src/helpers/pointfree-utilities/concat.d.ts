@@ -1,1 +1,1 @@
-export type concat = (x: string) => (y: string) => string
+export declare function concat(x: string): (y: string) => string

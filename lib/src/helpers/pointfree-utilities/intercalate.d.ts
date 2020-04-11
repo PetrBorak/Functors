@@ -1,1 +1,1 @@
-export type intercalate = (str: string) => (x: any[]) => string
+export declare function intercalate(str: string):  (x: any[]) => string

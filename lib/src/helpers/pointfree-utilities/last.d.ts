@@ -1,1 +1,1 @@
-export type last = (xs: any[] | string) => any
+export declare function last(xs: any[] | string): any
