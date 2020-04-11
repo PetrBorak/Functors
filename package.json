@@ -1,6 +1,6 @@
 {
   "name": "@petrborak/functors",
-  "version": "6.10.1",
+  "version": "7.0.0",
   "description": "Functors for functional programming",
   "main": "lib.bundle.js",
   "types": "index.d.ts",
