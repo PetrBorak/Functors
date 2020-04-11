@@ -4,6 +4,7 @@
   "description": "Functors for functional programming",
   "main": "lib.bundle.js",
   "types": "index.d.ts",
+  "module": "index.js",
   "scripts": {
     "test-watch": "watch-run -i -p './**/*.test.ts,./**/*.js' npm run test",
     "test": "mocha --require ts-node/register --extensions js,ts,tsx src './**/*.test.{ts,tsx}'",
