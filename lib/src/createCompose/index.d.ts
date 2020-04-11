@@ -11,6 +11,6 @@ export declare class Compose<T> {
 
   //TODO - fiugre out the way to pass types from the closure to static property
   static of(x: any): Compose<any>
-  public map: (fn: (x: any) => any) => Compose<T>
+  public map: (fn: (x: any) => any) => Compose<any>
   public ap: (f: Functor<T>) => ApplicativeContainer<any>
 }
