@@ -9,6 +9,7 @@
     "test-watch": "watch-run -i -p './**/*.test.ts,./**/*.js' npm run test",
     "test": "mocha --require ts-node/register --extensions js,ts,tsx src './**/*.test.{ts,tsx}'",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
+    "cover": "nyc cover node_modules/mocha/bin/_mocha -- --reporter spec",
     "eslint": "eslint . --ext .js -c eslintrc.json --fix",
     "clean": "rm -rf _bundles lib lib-esm",
     "build": "npm run clean && webpack"
