@@ -1,4 +1,6 @@
-import { compose, identity } from '../../';
+import { compose, identity, curry } from '../../';
+
+export const rejectedCallback = (x) => (reject, resolve) => reject(x);
 
 export class Task {
   constructor(fork) {
@@ -10,7 +12,7 @@ export class Task {
   // }
   
   static rejected(x) {
-    return new Task((reject, _) => reject(x));
+    return new Task(rejectedCallback(x));
   }
   
   // ----- Pointed (Task a)

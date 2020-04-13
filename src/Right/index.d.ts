@@ -1,12 +1,14 @@
-import { Either } from "../../"
+import { Functor } from "../subtypes/Functor"
+import { ApplicativeContainer } from "../Applicative"
 
-// export declare class Right<T> extends Either<T> {}
 export declare class Right {
   constructor(x: any)
-  isLeft: any
-  isRight: any
-  map: any
-  ap: any
-  chain: any
-  join: any
+  private $value: any
+  public get isLeft(): false
+  public get isRight(): true
+  public map(fn: (x: any) => any): Right
+  public ap(f: Functor<any>): ApplicativeContainer<any>
+  public chain(fn: (x: any) => any): any
+  public join(): any
+  public sequence(x: ApplicativeContainer<any>): Right
 }
