@@ -11,6 +11,3 @@ script:
 
 # Send coverage data to Coveralls
 after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
-
-before_script: chmod 0777 ./node_modules/.bin/mocha
-  © 2020 GitHub, Inc.
