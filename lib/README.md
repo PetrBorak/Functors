@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/%40petrborak%2Ffunctors.svg)](https://badge.fury.io/js/%40petrborak%2Ffunctors)
+[![Coverage Status](https://coveralls.io/repos/github/PetrBorak/Functors/badge.svg?branch=master)](https://coveralls.io/github/PetrBorak/Functors?branch=master)
 
 # BASIC FUNCTORS AND HELPER UTILITIES
 This package is meant to enable usage of support files from https://www.npmjs.com/package/@mostly-adequate/support
