@@ -4,8 +4,8 @@ import { ApplicativeContainer } from "../Applicative"
 export declare class Right {
   constructor(x: any)
   private $value: any
-  public isLeft(): false
-  public isRight(): true
+  public get isLeft(): false
+  public get isRight(): true
   public map(fn: (x: any) => any): Right
   public ap(f: Functor<any>): ApplicativeContainer<any>
   public chain(fn: (x: any) => any): any
